@@ -38,8 +38,8 @@ Tips:
 
 ###供货sample
 
-    ``<?php
-
+  ```php 
+    <?php
 $app_id    = '2916ce5c8c31bbcf9d34954e0a98cbb3';
 $app_key   = 'W0ZkINUqP9gm0D0n';
 $sign_type = "MD5";
@@ -57,7 +57,7 @@ $items  = [
 ];
 var_dump($client->uploadSupply('R', $items));
 exit;
-    ```
+```
 
 
 ## License

@@ -22,4 +22,5 @@ $items  = [
         'coo' => '', 'product_qty' => 1, 'price_unit' => '', 'price_interval' => '', 'description' => '', 'product_code' => ''
     ]
 ];
-$client->uploadSupply('R', $items);
+var_dump($client->uploadSupply('R', $items));
+exit;

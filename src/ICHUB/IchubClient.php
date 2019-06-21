@@ -19,10 +19,11 @@ class IchubClient extends IchubClientBase
     /**
      * @param $currency_id
      * @param $items
+     * @return array|bool|mixed
      */
     public function uploadSupply($currency_id, $items)
     {
         $data = ['api_code' => SupplyModel::$method, 'currency_id' => $currency_id, 'items' => $items];
-        $this->request($data, ['items']);
+        return $this->request($data, ['items']);
     }
 }

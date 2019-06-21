@@ -73,11 +73,10 @@ class IchubClientBase
             $request->set_body($data);
             $request->send_request();
             $content = $request->get_response_body();
-            //  $content = json_decode($content, true);
-            var_dump($content);
-            exit;
+            $content = json_decode($content, true);
+            return $content ? $content : [];
         } catch (RequestCore_Exception $e) {
-
+            return false;
         }
     }
 }

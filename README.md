@@ -17,7 +17,7 @@ Tips:
    You can also declare the dependency on Alibaba Cloud OSS SDK for PHP in the `composer.json` file.
 
         "require": {
-            "composer require ichub/ichub-openapi-sdk-php": "~1.0"
+            "ichub/ichub-openapi-sdk-php": "~1.0"
         }
 
    Then run `composer install` to install the dependency. After the Composer Dependency Manager is installed, import the dependency in your PHP code: 

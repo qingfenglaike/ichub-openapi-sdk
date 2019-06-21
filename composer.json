@@ -1,0 +1,20 @@
+{
+    "name": "ichub/ichub-openapi-sdk-php",
+    "description": "Ichub OpenApi SDK for PHP",
+    "homepage": "https://www.ichub.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ICHUB",
+            "homepage": "https://www.ichub.com"
+        }
+    ],
+    "require": {
+        "php":">=7.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"ICHUB\\": "src/ICHUB"}
+    }
+}

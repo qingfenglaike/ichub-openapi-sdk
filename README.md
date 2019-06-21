@@ -1,4 +1,3 @@
-# ichub-openapi-sdk
 # ICHUB OpenApi SDK for PHP
 
 ## Run environment

@@ -1,6 +1,5 @@
 # ichub-openapi-sdk
-ichub-openapi-sdk
-﻿# ICHUB OpenApi SDK for PHP
+# ICHUB OpenApi SDK for PHP
 
 ## Run environment
 - PHP 7.0+.

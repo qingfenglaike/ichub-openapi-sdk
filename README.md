@@ -34,7 +34,7 @@ Tips:
         require_once '/path/to/ichub-openapi-sdk-php/autoload.php';
 
 
-### 供货sample
+### supply sample
 
   ```php 
     <?php

@@ -67,7 +67,4 @@ exit;
 - [ICHUB  official website](https://www.ichub.com).
 -
 
-[releases-page]: https://github.com/aliyun/aliyun-oss-php-sdk/releases
-[phar-composer]: https://github.com/clue/phar-composer
-
 

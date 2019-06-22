@@ -26,7 +26,7 @@ class IchubClientBase
     protected $host = 'http://opendev.ichub.com/router/rest';
     protected $data = [];
 
-    public function __construct($app_id, $key, $sign_type, $public_key_path = '', $private_key_path = '')
+    public function __construct($app_id, $key, $sign_type, $v = '1.0.0', $public_key_path = '', $private_key_path = '')
     {
         if (!$app_id) {
             die("invalid app_id");
@@ -39,6 +39,7 @@ class IchubClientBase
         }
         $this->app_id           = $app_id;
         $this->key              = $key;
+        $this->v                = $v;
         $this->sign_type        = $sign_type;
         $this->public_key_path  = $public_key_path;
         $this->private_key_path = $private_key_path;

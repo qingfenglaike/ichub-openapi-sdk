@@ -7,8 +7,8 @@
  */
 require_once __DIR__ . '/common.php';
 
-$app_id    = '4d7a6d8828a8bf7ec48195c6f7e81a88';
-$app_key   = '123456';
+$app_id    = '2916ce5c8c31bbcf9d34954e0a98cbb3';
+$app_key   = 'W0ZkINUqP9gm0D0n';
 $sign_type = "MD5";
 
 $client = new \ICHUB\IchubClient($app_id, $app_key, $sign_type);

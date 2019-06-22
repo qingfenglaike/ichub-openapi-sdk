@@ -8,7 +8,7 @@ Tips:
 
 - In Ubuntu, you can use the ***apt-get*** package manager to install the *PHP cURL extension*: `sudo apt-get install php5-curl`.
 
-## Install OSS PHP SDK
+## Install ICHUB APi PHP SDK
 
 - If you use the ***composer*** to manage project dependencies, run the following command in your project's root directory:
 

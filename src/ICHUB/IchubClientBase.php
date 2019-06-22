@@ -22,8 +22,8 @@ class IchubClientBase
     protected $private_key_path = '';
     protected $timestamp = 0;
     protected $v = '1.0.0';
-    // protected $host = 'https://open.ichub.com';
-    protected $host = 'http://opendev.ichub.com/router/rest';
+    protected $host = 'https://open.ichub.com';
+    //protected $host = 'http://opendev.ichub.com/router/rest';
     protected $data = [];
 
     public function __construct($app_id, $key, $sign_type, $v = '1.0.0', $public_key_path = '', $private_key_path = '')

@@ -1,5 +1,5 @@
 {
-  "name": "ichub-openapi-sdk-php",
+  "name": "ichub/ichub-openapi-sdk-php",
   "description": "ichub api sdk",
   "type": "library",
   "require": {

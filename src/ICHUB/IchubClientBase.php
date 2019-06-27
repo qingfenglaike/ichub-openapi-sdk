@@ -26,11 +26,12 @@ class IchubClientBase
     //protected $host = 'http://opendev.ichub.com/router/rest';
     protected $data = [];
 
-    public function __construct($app_id, $key, $sign_type, $v = '1.0.0', $public_key_path = '', $private_key_path = '')
+    public function __construct($app_id, $key, $sign_type, $v = '1.0.0', $public_key_path = '', $private_key_path = '', $host = '')
     {
         if (!$app_id) {
             die("invalid app_id");
         }
+
         if (!$key) {
             die("invalid key");
         }
@@ -44,9 +45,13 @@ class IchubClientBase
         $this->public_key_path  = $public_key_path;
         $this->private_key_path = $private_key_path;
         $this->timestamp        = round(microtime(true) * 1000);
+        if ($host) {
+            $this->host = $host;
+        }
     }
 
-    protected function buildParams($params)
+    protected
+    function buildParams($params)
     {
         $params['timestamp'] = $this->timestamp;
         $params['app_id']    = $this->app_id;
@@ -55,7 +60,8 @@ class IchubClientBase
         return $params;
     }
 
-    protected function request($data, $filter = [])
+    protected
+    function request($data, $filter = [])
     {
         $data         = $this->buildParams($data);
         $build_params = $data;
